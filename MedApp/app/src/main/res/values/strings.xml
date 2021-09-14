@@ -1,0 +1,14 @@
+<resources>
+    <string name="save">Save</string>
+    <string name="new_task">New Medicine</string>
+    <string name="tasks">Medicines</string>
+    <string name="app_name">MedApp</string>
+    <string name="my_medications">My Medicines</string>
+    <string name="scan">Scan your prescription</string>
+    <string name="medicine_name_and_time">Medicine name (and time)</string>
+    <string name="important_medicine">Important medicine</string>
+    <string name="be_in_control_of_your_meds">Be in control of your meds</string>
+    <string name="scan_your_prescription_add_to_your_medications_and_you_will_never_forget_to_take_them">Scan your prescription, add to your medicines and you will never forget to take them</string>
+    <string name="button_text">Camera</string>
+    <string name="button_text1">Gallery</string>
+</resources>

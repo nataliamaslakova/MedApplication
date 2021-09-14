@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tasksText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:textColor="#08006A"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="32sp"
+            android:text="Medicines for Today" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tasksRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tasksText"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:nestedScrollingEnabled="true" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="#08006A"
+        android:src="@drawable/ic_baseline_add_24" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="#7E8B96">
+
+        <Button
+            android:id="@+id/Scan"
+            android:layout_width="147dp"
+            android:layout_height="66dp"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="56dp"
+            android:background="#00000000"
+            android:fontFamily="monospace"
+            android:text="Scan your prescription"
+            android:textAlignment="center"
+            android:textColor="#08006A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Meds"
+            android:layout_width="147dp"
+            android:layout_height="66dp"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="-95dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="7.5dp"
+
+            android:background="#00000000"
+            android:fontFamily="monospace"
+            android:text="My Medicines"
+            android:textAlignment="center"
+            android:textColor="#08006A"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraMain">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="128dp"
+        android:background="#00001234"
+        android:backgroundTint="#916D6D"
+        android:fontFamily="monospace"
+        android:fontStyle="normal"
+        android:drawableLeft="@drawable/ic_baseline_image_24"
+        android:text="@string/button_text1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <WebView
+        android:id="@+id/result"
+        android:layout_width="333dp"
+        android:layout_height="472dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginBottom="128dp"
+        android:background="#00001234"
+        android:backgroundTint="#916D6D"
+        android:backgroundTintMode="@color/black"
+        android:fontFamily="monospace"
+        android:drawableLeft="@drawable/ic_baseline_photo_camera_24"
+        android:fontStyle="normal"
+        android:text="@string/button_text"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#7E8B96"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/Scan"
+            android:layout_width="147dp"
+            android:layout_height="66dp"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="56dp"
+            android:background="#00000000"
+            android:fontFamily="monospace"
+            android:text="Scan your prescription"
+            android:textAlignment="center"
+            android:textColor="#08006A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Meds"
+            android:layout_width="147dp"
+            android:layout_height="66dp"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="-95dp"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginEnd="0dp"
+
+            android:background="#00000000"
+            android:fontFamily="monospace"
+            android:text="My Medicines"
+            android:textAlignment="center"
+            android:textColor="#08006A"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
